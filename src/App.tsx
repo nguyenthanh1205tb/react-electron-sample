@@ -1,7 +1,8 @@
 import React from 'react'
+import Installation from './pages/installation'
 
 function App() {
-  return <div>hello react and electron</div>
+  return <Installation />
 }
 
 export default App
