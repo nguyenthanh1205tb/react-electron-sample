@@ -34,7 +34,7 @@
     "lint": "prettier --check \"./**/*.{js,jsx,ts,tsx}\"",
     "eslint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
-    "electron:build": "rm -rf build/ release/ && yarn build && electron-builder -c.extraMetadata.main=build/main.js -mwl",
+    "electron:build": "rm -rf \"./build/\" \"./release/\" && yarn build && electron-builder -mwl -c.extraMetadata.main=build/main.js",
     "electron:start": "wait-on tcp:3000 && electron ."
   },
   "build": {
