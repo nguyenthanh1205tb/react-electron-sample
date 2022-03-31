@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable no-undef */
 const { app, BrowserWindow } = require('electron')
 const isDev = require('electron-is-dev')
 const path = require('path')
@@ -7,6 +9,8 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 1024,
     height: 768,
+    frame: true,
+    resizable: false,
     webPreferences: {
       nodeIntegration: true,
       preload: path.join(__dirname, 'preload.js'),

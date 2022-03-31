@@ -2,7 +2,7 @@ import React from 'react'
 import * as ReactDOMClient from 'react-dom/client'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import 'antd/dist/antd.css'
+import './styles.css'
 
 const container = document.getElementById('root')
 
