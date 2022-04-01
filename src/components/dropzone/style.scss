@@ -1,0 +1,12 @@
+.dropzone-container {
+  min-width: 256px;
+  min-height: 128px;
+  border-width: 2px;
+  border-style: dashed;
+  & .active {}
+  & .active, .inactive {
+    & img {
+      width: 90px;
+    }
+  }
+}
